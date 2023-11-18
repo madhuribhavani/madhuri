@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lan>
+    <head>
+        <title>Forms</title>
+    </head >
+    <style>
+        form{
+            text-align: center;
+            background-color: rgb(18, 151, 129);
+            margin-right: 200px;
+            margin-left: 200px;
+        }
+        h2{
+            text-align: center;
+        }
+        label{
+            display: block;
+        }
+        input[type=text],
+        input[type=tel],
+        input[type=email],
+        input[type=time],
+        input[type=week],
+        input[type=month],
+        input[type=search],
+        textarea,select{
+            border-radius: 10px;
+        }
+        input[type=submit]{
+            background-color: rgb(143,202,5);
+            cursor:pointer;
+        }
+        input[type=submit]:hover{
+            background-color: brown;
+        }
+    </style>
+     <body>  
+                    <h2>Registration Form</h2>
+                    <form action="https://formspree.io/f/xvojnblj" method="post">
+                    <label></label>
+                    <input type="button" onclick="alert('Hello Friends!')"value="Click Me!">
+                    <label>First Name</label>
+                    <input type="text" id="fname=" name="fname" name="fname" required>
+                    <label>Last Name</label>
+                    <input type="text" id="lname" name="lname" name="lname" required><br>
+                    <input type="reset"> 
+                    <label>Phone Number</label>
+                    <input type="tel" phoneNumber="phoneNumber" required>
+                    <label>email</label>
+                    <input type="email" email="email" required>
+                    <label>upload certificates</label>
+                    <input type="file" myfile="myfile" required>
+                    <br><br>
+                    <label>Favourite Color</label>
+                    <input type="color" color="color" name="color" required>
+                    <label>DOB</label>
+                    <input type="date" id="DOB" name="DOB" required>
+                    <label>Birth Time</label>
+                    <input type="datetime-local" btime="btime" name="btime" required>
+                    <label>Select Time</label>
+                    <input type="time" id="appt" name="appt" required>
+                    <label>Select a week</label>
+                    <input type="week"  id="week" name="weeek" required> 
+                    <label>Select a Month</label>
+                    <input type="month" month="month" name="month" required>
+                    <label>Quantity(1 and 5)</label>
+                    <input type="number" quantity="quantity" name="quantity" min="1" max="5" required>
+                    <label>gender</label>
+                    <select>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <label>Google Search</label>
+                    <input type="search" gsearch="gsearch" name="gsearch" required>
+                    <label>Your Homepage</label>
+                    <input type="url" homepage="homepage" name="homepage" required>
+                    <label>Web languages</label>
+                    <input type="radio" lang="lang" name="lang">Html 
+                    <input type="radio" lang="lang" name="lang">CSS
+                    <input type="radio" lang="lang" name="lang">Java Script
+                    <label>Languages</label>
+                    <input type="checkbox" id="languages" name="languages">English
+                    <input type="checkbox" id="languages" name="languages">Telugu
+                    <input type="checkbox" id="languages" name="languages">Tamil
+                    <input type="checkbox" id="languages" name="languages">Hindi
+                    <label>Volume(between 0 and 50</label>
+                    <input type="range" vol="vol" name="vol" min="0" max="50">
+                     <label>Zipcode</label>
+                    <input type="text" zipcode="zipcode" required>
+                    <label>Your image</label>
+                    <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48" required>
+                    <label>About</label>
+                    <textarea name="about"></textarea>
+                    <label>Submit</label>
+                    <input type="submit" value="Register">
+                    </form>
+                </body>
+            
